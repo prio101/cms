@@ -1,0 +1,2 @@
+class ProjectShowCase < ApplicationRecord
+end

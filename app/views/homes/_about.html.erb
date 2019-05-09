@@ -1,0 +1,27 @@
+    <!-- About Section start -->
+    <div class="about-area section-padding bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12 info">
+            <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+              <div>
+                <div class="site-heading">
+                  <p class="mb-3">About</p>
+                  <h2 class="section-title"><%= @site.sub_title %></h2>
+                </div>
+                <div class="content">
+                  <p>
+                    <%= @site.about %>
+                  </p>
+                  <a href="#" class="btn btn-common mt-3">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+            <%= image_tag('about/img-1.png',class:'img-fluid') %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section End -->
