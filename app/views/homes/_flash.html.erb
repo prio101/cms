@@ -1,0 +1,13 @@
+<div id="flash-msg" class="alert alert-danger">
+  <% flash.each do |key, value| %>
+    <h5 class="<%= key %> text-center" ><%= value %></h5>
+  <% end %>
+</div>
+
+<script>
+    $( document ).ready(function(){
+        $('#flash-msg').fadeIn('slow', function(){
+            $('#flash-msg').delay(5000).fadeOut();
+        });
+    });
+</script>

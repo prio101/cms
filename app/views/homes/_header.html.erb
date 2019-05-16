@@ -15,7 +15,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
               <% @menus.each do |menu| %>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <%= link_to(menu.title.upcase, menu.link, class: 'nav-link') %>
                 </li>
               <% end %>
