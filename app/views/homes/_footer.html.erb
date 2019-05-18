@@ -9,7 +9,7 @@
               <%= image_tag('logo.svg',class: 'footer-logo') %>
             </h3>
             <div class="textwidget">
-              <p><%= @site.about %></p>
+              <p><%= @site.sub_title %></p>
             </div>
             <!--<div class="social-icon">-->
               <!--<a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>-->
@@ -24,7 +24,7 @@
           <ul class="footer-link">
             <% @projects.each  do |project| %>
               <li>
-                <%= link_to(project.title, project.title) %>
+                <%= link_to(project.title, project.image_link) %>
               </li>
             <% end %>
           </ul>

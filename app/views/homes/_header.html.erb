@@ -15,7 +15,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <% @menus.each do |menu| %>
+              <% @menus.order(:id).each do |menu| %>
                 <li class="nav-item">
                   <%= link_to(menu.title.upcase, menu.link, class: 'nav-link') %>
                 </li>
@@ -32,8 +32,7 @@
           <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
               <div class="contents">
-                <h2 class="head-title"><%= @site.sub_title %></h2>
-                <p><%= @site.about %></p>
+                <h2 class="head-title" ><%= @site.sub_title %></h2>
               </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
