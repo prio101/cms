@@ -35,4 +35,6 @@ install_plugin Capistrano::SCM::Git
 # require "capistrano/passenger"
 # load 'deploy/assets'
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
+#
+cap.production.deploy
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
