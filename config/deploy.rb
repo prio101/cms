@@ -10,7 +10,7 @@ set :user, 'cms'
 ask :branch, 'deploy'
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "~/cms/apps/" 
+set :deploy_to, "~/cms/" 
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

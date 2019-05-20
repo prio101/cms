@@ -23,5 +23,9 @@ test:
   database: cms_test
 
 production:
-  <<: *default
+  adapter: postgresql
+  username: 'cms'
+  password: 'cms'
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
   database: cms_production
