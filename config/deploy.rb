@@ -2,13 +2,15 @@
 lock "~> 3.10.2"
 
 set :application, "cms"
-set :repo_url, "git@example.com:prio101/cms.git"
+set :repo_url, "git@github.com:prio101/cms.git"
+set :user, 'cms'
+
 
 # Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, 'deploy'
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, "~/cms/apps/" 
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -36,4 +38,4 @@ set :repo_url, "git@example.com:prio101/cms.git"
 # set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
-# set :ssh_options, verify_host_key: :secure
+set :ssh_options, verify_host_key: :secure
