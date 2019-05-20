@@ -59,3 +59,11 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+server '172.105.227.152', user: 'cms', roles: %w{app db web}
+set :deploy_to, "/home/cms/#{fetch(:rails_env)}"
+set :branch, :deploy
+set :stage, :staging
+set :ssh_options, {
+    keys: %w(~/.ssh/shift-manager.pem),
+    auth_methods: %w(publickey)
+}
