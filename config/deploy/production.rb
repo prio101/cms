@@ -54,7 +54,7 @@ server "172.105.227.152",
   roles: %w{web app},
   ssh_options: {
     user: "cms", # overrides user setting above
-    keys: %w(/home/user_name/.ssh/id_rsa),
+    keys: %w(/home/cms/.ssh/id_rsa),
     forward_agent: false,
     auth_methods: %w(publickey password)
     # password: { %w(/home/user_name/.ssh/id_rsa) }
